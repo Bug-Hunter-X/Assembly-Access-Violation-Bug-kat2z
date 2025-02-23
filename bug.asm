@@ -1,0 +1,3 @@
+mov eax, [ebx+4] ; This instruction might cause an access violation if ebx+4 points to an invalid memory address. 
+mov ecx, [eax] ; This instruction might also cause an access violation if eax points to an invalid memory address after the previous instruction. 
+mov [ecx], edx ; This instruction might cause an access violation if ecx points to an invalid memory address after the previous two instructions.
